@@ -691,12 +691,8 @@ if __name__ == '__main__':
     if opt.dataset in ['AWA1', 'AWA2']:
         opt.seen_classes = 10
         opt.novel_classes = 10
-        if opt.setting == 'online':
-            opt.seen_classes = 8
-            opt.novel_classes = 2
         opt.num_tasks = 5
         opt.all_classes = 50
-        # opt.no_of_replay = 300
         opt.attribute_size = 85
         if opt.load_best_hp:
             if opt.dataset == "AWA1":
@@ -718,12 +714,8 @@ if __name__ == '__main__':
     if opt.dataset == 'SUN':
         opt.seen_classes = 47
         opt.novel_classes = 47
-        if opt.setting == 'online':
-            opt.seen_classes = 43
-            opt.novel_classes = 4
         opt.num_tasks = 15
         opt.all_classes = 717
-        # opt.no_of_replay = 20
         opt.attribute_size = 102
         if opt.load_best_hp:
             if opt.attribute_generation_method == 'interpolation':
@@ -738,11 +730,7 @@ if __name__ == '__main__':
         opt.seen_classes = 10
         opt.novel_classes = 10
         opt.num_tasks = 20
-        if opt.setting == 'online':
-            opt.seen_classes = 7
-            opt.novel_classes = 2
         opt.all_classes = 200
-        # opt.no_of_replay = 150
         opt.attribute_size = 312
         if opt.load_best_hp:
             if opt.attribute_generation_method == 'interpolation':
