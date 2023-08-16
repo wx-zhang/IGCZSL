@@ -1,0 +1,21 @@
+loss_weights:
+  discr:
+    imitative: 1.0
+    real: 2.5
+  gen:
+    imitative: 1.0
+    creative: 1.0
+  visit_loss: 1.0
+grad_clip_value: 100
+rw_params:
+  num_steps: 5
+  decay_coef: 0.7
+  similarity_measure: "dot_product"
+  dot_product_scale: 1.0
+  n_examples_per_proto: 10
+  space: "feature"
+  class_visit_loss_coef: 0.5
+  loss_type: "cross_entropy"
+  learnable_alpha: false
+lr: 0.0002
+z_dim: 100
