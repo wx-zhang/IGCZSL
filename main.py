@@ -599,8 +599,7 @@ def main(opt):
     data = dataloader(opt)
     discriminator = Discriminator(data.feature_size, data.att_size).cuda()  # Create discriminator
     generator = Generator(data.feature_size, data.att_size).cuda()  # Create generator
-    print(data.seenclasses)
-    print(data.unseenclasses)
+
 
     replay_feat = None
     replay_lab = None
