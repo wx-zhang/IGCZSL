@@ -1,5 +1,6 @@
 # Continual Zero-Shot Learning through Semantically Guided Generative Random Walks
-This is the official PyTorch implementation for our ICCV-2023 paper\
+This is the official PyTorch implementation for our ICCV-2023 paper
+
 [Continual Zero-Shot Learning through Semantically Guided Generative Random Walks ](https://arxiv.org/abs/2308.XXXXX)\
 Wenxuan Zhang*, [Paul Janson*](https://pauljanson002.github.io/), [Kai Yi](https://kaiyi.me/), [Ivan Skorokhodov](https://universome.github.io/), and [Mohamed Elhoseiny](https://www.mohamed-elhoseiny.com/) \
 <a href='https://arxiv.org/abs/2308.XXXXX'><img src='https://img.shields.io/badge/arXiv-2308.XXXXX-red'></a> 
