@@ -474,7 +474,7 @@ def train(task_no, Neighbors, discriminator, generator, data, seen_classes, nove
 
             if opt.attribute_generation_method == "learnable":
                 att_optimizer.step()
-        if epoch == epochs - 1 or opt.one_epoch:
+        if epoch == epochs - 1:
 
             test_seen_f, test_seen_l, test_seen_a, test_unseen_f, test_unseen_l, test_unseen_a = data.task_test_data_(
                 task_no, seen_classes, all_classes, novel_classes, num_tasks)
