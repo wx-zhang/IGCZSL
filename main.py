@@ -607,10 +607,9 @@ def main(opt):
     replay_attr = None
     avg_feature = None
 
-    if opt.setting == 'static':
-        iter_task = opt.num_tasks
-    else:
-        iter_task = opt.num_tasks + 1
+
+    iter_task = opt.num_tasks
+
 
     for task_no in range(1, iter_task):
         replay_feat, replay_lab, replay_attr, avg_feature = train(task_no, opt.Neighbors, discriminator, generator,
