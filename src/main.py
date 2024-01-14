@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score
 from torch import optim
 from torch.autograd import Variable
 
-from Dataloader import DATA_LOADER as dataloader
+from data import DATA_LOADER as dataloader
 from rw_loss import compute_rw_imitative_loss, compute_rw_real_loss, compute_rw_creative_loss
 
 cwd = os.path.dirname(os.getcwd())
