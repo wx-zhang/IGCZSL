@@ -1,0 +1,4 @@
+creative_weight: 10.0
+grw_creative_weight: 0.5
+rw_steps: 3
+decay_coef: 0.7
