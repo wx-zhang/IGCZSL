@@ -5,6 +5,16 @@ This is the official PyTorch implementation for our ICCV-2023 paper
 Wenxuan Zhang, [Paul Janson](https://pauljanson002.github.io/), [Kai Yi](https://kaiyi.me/), [Ivan Skorokhodov](https://universome.github.io/), and [Mohamed Elhoseiny](https://www.mohamed-elhoseiny.com/) \
 <a href='https://arxiv.org/abs/2308.12366'><img src='https://img.shields.io/badge/arXiv-2308.12366-red'></a> 
 
+## Update
+In this branch, we updated and refactored the code to be compiled with `pytorch>=1.5`.
+
+Here are the results (Harmonic Mean) from this code base with `buffer_size=5000`
+|  | AWA1 | AWA2 | CUB | SUN |
+|---|---|---|---|---|
+| Interpolation | 43.72 | 47.50 | 29.76 | 26.75 |
+| Dictionary | 43.51 | 47.64 | 30.96 | 26.24 | 
+
+
 ## Introduction
 In this project, we explore the problem of inductive continual zero-shot learning.  Here, our approach stands out by not relying on any previously unseen information during training,but hallucinated (synthesized) feature instead. Through comprehensive theoretical analysis, we discover that the key lies in the density and diversity of these hallucinated examples within the feature space. 
 
@@ -45,8 +55,6 @@ python main.py \
 
 
 
-## Results
-<img src="results.png">
 
 ## Citation
 ```
