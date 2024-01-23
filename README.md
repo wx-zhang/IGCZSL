@@ -5,6 +5,10 @@ This is the official PyTorch implementation for our ICCV-2023 paper
 Wenxuan Zhang, [Paul Janson](https://pauljanson002.github.io/), [Kai Yi](https://kaiyi.me/), [Ivan Skorokhodov](https://universome.github.io/), and [Mohamed Elhoseiny](https://www.mohamed-elhoseiny.com/) \
 <a href='https://arxiv.org/abs/2308.12366'><img src='https://img.shields.io/badge/arXiv-2308.12366-red'></a> 
 
+
+## Update 
+We updated the code to be compatible with PyTorch>=1.5 in this [branch](https://github.com/wx-zhang/IGCZSL/tree/beta)
+
 ## Introduction
 In this project, we explore the problem of inductive continual zero-shot learning.  Here, our approach stands out by not relying on any previously unseen information during training,but hallucinated (synthesized) feature instead. Through comprehensive theoretical analysis, we discover that the key lies in the density and diversity of these hallucinated examples within the feature space. 
 
